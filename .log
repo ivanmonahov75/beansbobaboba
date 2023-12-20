@@ -1,0 +1,31 @@
+Task 1:
+ecoli.fasa:
+	ATG	3890
+	ATT	4
+	CTG	2
+	GTG	338
+	TTC	1
+	TTG	80
+graci2.fasta:
+	ATG	3890
+	ATT	4
+	CTG	2
+	GTG	338
+	TTC	1
+	TTG	80
+pneumohern.fasta:
+	ATG	3890
+	ATT	4
+	CTG	2
+	GTG	338
+	TTC	1
+	TTG	80
+Task 2:
+	 lcl|U00096.3_cds_AAC73112.1_1 [gene=thrL] [locus_tag=b0001] [db_xref=UniProtKB/Swiss-Prot:P0AD86] [protein=thr operon leader peptide] [protein_id=AAC73112.1] [location=190..255] [gbkey=CDS]
+	 lcl|U00096.3_cds_b4587_250 [gene=insN] [locus_tag=b4587] [db_xref=ASAP:ABE-0285253,ECOCYC:G6130] [protein=IS911A regulator fragment] [pseudo=true] [location=join(270278..270540,271764..272190)] [gbkey=CDS]
+	 lcl|U00096.3_cds_b4587_250 [gene=insN] [locus_tag=b4587] [db_xref=ASAP:ABE-0285253,ECOCYC:G6130] [protein=IS911A regulator fragment] [pseudo=true] [location=join(270278..270540,271764..272190)] [gbkey=CDS]
+	 lcl|U00096.3_cds_b4587_250 [gene=insN] [locus_tag=b4587] [db_xref=ASAP:ABE-0285253,ECOCYC:G6130] [protein=IS911A regulator fragment] [pseudo=true] [location=join(270278..270540,271764..272190)] [gbkey=CDS]
+	 lcl|U00096.3_cds_b4587_250 [gene=insN] [locus_tag=b4587] [db_xref=ASAP:ABE-0285253,ECOCYC:G6130] [protein=IS911A regulator fragment] [pseudo=true] [location=join(270278..270540,271764..272190)] [gbkey=CDS]
+	 lcl|U00096.3_cds_AAD13438.1_1459 [gene=fdnG] [locus_tag=b1474] [db_xref=UniProtKB/Swiss-Prot:P24183] [protein=formate dehydrogenase N subunit alpha] [transl_except=(pos:586..588,aa:Sec)] [protein_id=AAD13438.1] [location=1547401..1550448] [gbkey=CDS]
+	 lcl|U00096.3_cds_AAD13456.1_3824 [gene=fdoG] [locus_tag=b3894] [db_xref=UniProtKB/Swiss-Prot:P32176] [protein=formate dehydrogenase O subunit alpha] [transl_except=(pos:586..588,aa:Sec)] [protein_id=AAD13456.1] [location=complement(4082772..4085822)] [gbkey=CDS]
+	 lcl|U00096.3_cds_AAD13462.1_3997 [gene=fdhF] [locus_tag=b4079] [db_xref=UniProtKB/Swiss-Prot:P07658] [protein=formate dehydrogenase H] [transl_except=(pos:418..420,aa:Sec)] [protein_id=AAD13462.1] [location=complement(4297219..4299366)] [gbkey=CDS]
