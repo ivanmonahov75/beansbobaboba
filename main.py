@@ -82,10 +82,11 @@ for i in ['ecoli.fasta', 'graci2.fasta', 'pneumohern.fasta']:
             for i in cod.keys():
                 print(f'\t{i}\t{cod[i]}')
 
-print('ecoli.fasta:', sep='')
-with open('ecoli.fasta') as seq:
+print('Task 5:', sep='')
+with open('ecoli_full.fasta') as seq:
     data = seq.read().split('>')
     data.pop(0)
+    data = ''.join(data[0].split('\n'))
     with open('out.txt', 'w') as ans:
         prot = []
         for i in data:
@@ -93,8 +94,9 @@ with open('ecoli.fasta') as seq:
 
         window, step = 100000, 1000
         gc_sum = 0
-        data = ''.join(prot)
-        rem = []
+        # data = ''.join(prot)
+        loc = []
+        glob = []
         for i in range(int(len(data) / step)):
             temp = data[i * step:i * step + window]
             if len(temp) < window:
@@ -105,8 +107,13 @@ with open('ecoli.fasta') as seq:
                 gc = 0
             gc_sum += gc
             ans.write(f'{i * step}\t{gc:.3f}\t{gc_sum:.3f}\n')
-            rem.append(gc)
+            loc.append(gc)
+            glob.append(gc_sum)
         print('\t', gc_sum)
 plt.figure(figsize=(30, 10))
-plt.plot(rem)
+# plt.plot(loc, label='Current')
+# plt.legend()
+# plt.show()
+plt.plot(glob, label='Global')
+plt.legend()
 plt.show()
