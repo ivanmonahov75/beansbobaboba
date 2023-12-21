@@ -38,11 +38,10 @@ with open('ecoli.fasta') as file:
 print('Task 3:')
 for bac in ['ecoli.fasta', 'graci2.fasta', 'pneumohern.fasta']:
     print(bac, ':', sep='')
-
     with open(bac) as seq:
-        data = seq.read().split('>')[1:]
+        data = seq.read().split('>')
+        data.pop(0)
         codons = []
-
         for i in data:
             temp = ''.join(i.split('\n')[1:])
             try:
@@ -54,9 +53,9 @@ for bac in ['ecoli.fasta', 'graci2.fasta', 'pneumohern.fasta']:
             codons_s.remove('')
         except:
             pass
+        for i in codons_s:
+            print(f'\t{i}\t{codons.count(i)}')
 
-        for codon in codons_s:
-            print(f'\t{codon}\t{codons.count(i)}')
 
 # task 4
 print('Task 4:')
@@ -73,7 +72,6 @@ for bac in ['ecoli.fasta', 'graci2.fasta', 'pneumohern.fasta']:
                 prot.append(''.join(i.split('\n')[1:]))
 
             prot = ''.join(prot)
-
             for i in range(int(len(prot)/3)):
                 try:
                     cod[prot[i*3:i*3 + 3]] += 1
